@@ -82,13 +82,7 @@ void display(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
-	mode = 0;
-	tetrahedron(n);
-	mode = 1;
-	glTranslatef(-2.0, 0.0, 0.0);
-	tetrahedron(n);
 	mode = 2;
-	glTranslatef(+4.0, 0.0, 0.0);
 	tetrahedron(n);
 	glFlush();
 }
